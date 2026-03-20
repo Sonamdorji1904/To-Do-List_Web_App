@@ -4,10 +4,10 @@ services:
     runtime: docker
     dockerfilePath: ./backend/dockerfile
     envVars:
-      - key: DB_HOST
-        value: dpg-d6uoq1juibrs73aar640-a
+      - key: DATABASE_URL
+        value: postgresql://sonam:zfJru5MH1tgigL1tqddk9L5cc3Si7izA@dpg-d6uoq1juibrs73aar640-a.singapore-postgres.render.com/to_do_db_zupp
       - key: PORT
-        value: 5001
+        value: 5000
 
   - type: web
     name: fe-todo
