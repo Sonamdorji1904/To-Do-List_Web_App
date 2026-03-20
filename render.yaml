@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: be-todo
+    runtime: docker
+    dockerfilePath: ./backend/dockerfile
+    envVars:
+      - key: DB_HOST
+        value: dpg-d6uoq1juibrs73aar640-a
+      - key: PORT
+        value: 5001
+
+  - type: web
+    name: fe-todo
+    runtime: docker
+    dockerfilePath: ./frontend/dockerfile
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        value: https://be-todo.onrender.com
