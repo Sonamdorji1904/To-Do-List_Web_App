@@ -2,7 +2,7 @@ services:
   - type: web
     name: be-todo
     runtime: docker
-    dockerfilePath: ./backend/dockerfile
+    dockerfilePath: ./Backend/Dockerfile
     envVars:
       - key: DATABASE_URL
         value: postgresql://sonam:zfJru5MH1tgigL1tqddk9L5cc3Si7izA@dpg-d6uoq1juibrs73aar640-a.singapore-postgres.render.com/to_do_db_zupp
@@ -12,7 +12,7 @@ services:
   - type: web
     name: fe-todo
     runtime: docker
-    dockerfilePath: ./frontend/dockerfile
+    dockerfilePath: ./Frontend/Dockerfile
     envVars:
       - key: NEXT_PUBLIC_API_URL
         value: https://be-todo.onrender.com
