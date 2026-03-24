@@ -12,6 +12,9 @@ const port = process.env.PORT || 5000;
 // PostgreSQL connection
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false,
+  },
 });
 
 app.use(cors());
@@ -64,6 +67,4 @@ app.delete('/api/todos/:id', async (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
-});
+export { app, port };
