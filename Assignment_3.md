@@ -10,11 +10,8 @@
 
 - [Objective](#objective)
 - [Tools & Technologies](#tools--technologies)
-- [Task 1 — GitHub Repository Setup](#task-1--github-repository-setup)
-- [Task 2 — Docker Setup & Local Testing](#task-2--docker-setup--local-testing)
-- [Task 3 — GitHub Actions Workflow](#task-3--github-actions-workflow)
-- [Task 4 — Render.com Deployment](#task-4--rendercom-deployment)
-- [Pipeline Output](#pipeline-output)
+- [Task 1 — Docker Setup & Local Testing](#task-1--docker-setup--local-testing)
+- [Task 2 — GitHub Actions Workflow](#task-2--github-actions-workflow)
 - [Challenges Faced](#challenges-faced)
 - [Learning Outcomes](#learning-outcomes)
 - [Live Deployment](#live-deployment)
